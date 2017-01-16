@@ -1,0 +1,31 @@
+{
+  "_comment": "",
+  "intents": [
+    {"intent": "WhoPokedIntent"},
+    {"intent": "StartPokeWarIntent",
+     "slots": [
+        {
+          "name": "Person",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+	},
+    {"intent": "EndPokeWarIntent",
+     "slots": [
+        {
+          "name": "Person",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+	},
+    {"intent": "SeePokeStatIntent",
+     "slots": [
+        {
+          "name": "Person",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+	},
+    {"intent": "AMAZON.HelpIntent"}
+  ]
+}

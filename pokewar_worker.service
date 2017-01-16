@@ -1,0 +1,15 @@
+[Unit]
+Description=Facebook Pokewar Worker
+
+[Service]
+Type=simple
+PIDFile=/run/worker.pid
+ExecStart=/home/kchoi/bin/worker.py
+User=kchoi
+Group=kchoi
+WorkingDirectory=/home/kchoi/tmp/
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy = multi-user.target

@@ -1,0 +1,6 @@
+WhoPokedIntent who poked me
+WhoPokedIntent my pokers
+StartPokeWarIntent start poking {Sam Smith|Person}
+EndPokeWarIntent stop poking {Sam Smith|Person}
+SeePokeStatIntent stats for {Sam Smith|Person}
+SeePokeStatIntent statistics for {Sam Smith|Person}
