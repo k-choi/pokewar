@@ -112,6 +112,8 @@ class FacebookPokeManager:
                     logger.info("You poked {}".format(str_name))
                 except WebDriverException as e:
                     logger.info("You failed to poke {}".format(str_name))
+                    # Invalidate the update time so that Facebook Pokes page will be reloaded
+                    self.update_time = datetime.datetime.now() - datetime.timedelta(hours=2)
 
         data = {'new_pokers': l_new_pokers, 'pokers': l_names, 'poked_back': l_poked_back_names}
         logger.info(data)
