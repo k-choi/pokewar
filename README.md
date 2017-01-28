@@ -1,8 +1,7 @@
 # Pokewar
 Facebook Auto-poke with Amazon Alexa EndPoint interface
 
-<iframe  title="YouTube video player" width="480" height="390" src="http://www.youtube.com/watch?v=DmTo0qMnWnw?autoplay=1" frameborder="0" allowfullscreen></iframe>
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DmTo0qMnWnw/0.jpg)](https://www.youtube.com/watch?v=DmTo0qMnWnw)
 
 ## High Level Architecture Description
 On the high level, Pokewar consists of two parts: worker and waiter. Worker checks your Facebook pokes every three seconds, store poke history, and all the dirty works. Waiter is a Flask application that responds to your Alexa voice commands. Even though it serves the user directly, it relies on the worker for all the information it provides.
